@@ -382,25 +382,28 @@ pip install transformers accelerate sentencepiece
 
 streamlit run main_app.py
 
-📁 코드 구조
+📁 **코드 구조**
+
+```text
 sketchtospec/
 │
-├── main_app.py                 # Streamlit UI (Agent 호출)
+├── main_app.py             # Streamlit UI (Agent 호출)
 │
 ├── agent/
-│   ├── graph_agent.py          # ⭐ LangGraph 기반 ReAct Agent
-│   ├── prompt_builder.py       # Prompt Templates
-│   ├── json_parser.py          # JSON Extractor
-│   ├── tools.py                # Feature/UI/Component Utils
-│   ├── llm.py                  # Local LLM 래퍼
+│   ├── graph_agent.py      # ⭐ LangGraph 기반 ReAct Agent
+│   ├── prompt_builder.py   # Prompt Templates
+│   ├── json_parser.py      # JSON Extractor
+│   ├── tools.py            # Feature/UI/Component Utils
+│   ├── llm.py              # Local LLM 래퍼
 │   └── __init__.py
 │
 └── components/
-    ├── vision_detector.py      # 손그림 분석 (OpenCV)
-    ├── ui_recommender.py       # UI 추천기
-    ├── feature_library.py      # 기능 라이브러리
+    ├── vision_detector.py  # 손그림 분석 (OpenCV)
+    ├── ui_recommender.py   # UI 추천기
+    ├── feature_library.py  # 기능 라이브러리
     ├── utils.py
-    └── __init__.py
+    └── __init__.py.py
+```
 
 ⚡ 출력 예시
 📄 SRS (Markdown)
